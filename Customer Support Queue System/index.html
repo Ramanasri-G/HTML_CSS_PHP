@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Support Queue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1> Customer Support Queue</h1>
+        <p>FIFO Based Support Request Management</p>
+    </div>
+
+    <form action="process.php" method="post">
+
+        <label>Customer Name</label>
+        <input type="text" name="customer" placeholder="Enter customer name" required>
+
+        <label>Support Request</label>
+        <input type="text" name="request" placeholder="Enter support request" required>
+
+        <button type="submit" name="add">Add to Queue</button>
+
+    </form>
+
+    <form action="process.php" method="post">
+        <button type="submit" name="process" class="process">
+            Process Next Request
+        </button>
+    </form>
+
+</div>
+
+</body>
+</html>
