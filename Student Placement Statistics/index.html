@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Placement Statistics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Placement Statistics</h1>
+    <p>Enter student placement details</p>
+
+    <form action="process.php" method="post">
+
+        <label>Student 1 Name</label>
+        <input type="text" name="name[]" required>
+
+        <label>Department</label>
+        <select name="department[]" required>
+            <option value="">Select Department</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Management">Management</option>
+            <option value="Mathematics">Mathematics</option>
+        </select>
+
+        <label>Package (LPA)</label>
+        <input type="number" name="package[]" step="0.01" min="0" required>
+
+
+        <label>Student 2 Name</label>
+        <input type="text" name="name[]" required>
+
+        <label>Department</label>
+        <select name="department[]" required>
+            <option value="">Select Department</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Management">Management</option>
+            <option value="Mathematics">Mathematics</option>
+        </select>
+
+        <label>Package (LPA)</label>
+        <input type="number" name="package[]" step="0.01" min="0" required>
+
+
+        <label>Student 3 Name</label>
+        <input type="text" name="name[]" required>
+
+        <label>Department</label>
+        <select name="department[]" required>
+            <option value="">Select Department</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Management">Management</option>
+            <option value="Mathematics">Mathematics</option>
+        </select>
+
+        <label>Package (LPA)</label>
+        <input type="number" name="package[]" step="0.01" min="0" required>
+
+
+        <label>Student 4 Name</label>
+        <input type="text" name="name[]" required>
+
+        <label>Department</label>
+        <select name="department[]" required>
+            <option value="">Select Department</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Management">Management</option>
+            <option value="Mathematics">Mathematics</option>
+        </select>
+
+        <label>Package (LPA)</label>
+        <input type="number" name="package[]" step="0.01" min="0" required>
+
+
+        <button type="submit">Generate Placement Report</button>
+
+    </form>
+</div>
+
+</body>
+</html>
