@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Examination Result Processing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Examination Result</h1>
+    <p>Enter student details and marks</p>
+
+    <form action="process.php" method="post">
+
+        <label>Student Name</label>
+        <input type="text" name="name" required>
+
+        <label>Register Number</label>
+        <input type="text" name="register_no" required>
+
+        <label>Subject 1 - PHP</label>
+        <input type="number" name="php" min="0" max="100" required>
+
+        <label>Subject 2 - Database</label>
+        <input type="number" name="database" min="0" max="100" required>
+
+        <label>Subject 3 - Web Technology</label>
+        <input type="number" name="web" min="0" max="100" required>
+
+        <label>Subject 4 - Java</label>
+        <input type="number" name="java" min="0" max="100" required>
+
+        <button type="submit">Generate Result</button>
+
+    </form>
+</div>
+
+</body>
+</html>
