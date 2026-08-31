@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Patient Records Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <div class="icon">✚</div>
+
+        <div>
+            <h1>Patient Records Analysis</h1>
+            <p>Patient Information & Treatment Management</p>
+        </div>
+
+    </div>
+
+
+    <!-- Form -->
+
+    <form action="process.php" method="post">
+
+        <div class="section-title">
+            <span>Patient Information</span>
+            <small>Enter patient details below</small>
+        </div>
+
+
+        <div class="patient-grid">
+
+
+            <!-- Patient 1 -->
+
+            <div class="patient-card">
+
+                <div class="card-header">
+                    <span>01</span>
+                    <h3>Patient 1</h3>
+                </div>
+
+                <label>Patient Name</label>
+
+                <input
+                    type="text"
+                    name="name1"
+                    placeholder="Enter patient name"
+                    required
+                >
+
+
+                <label>Age</label>
+
+                <input
+                    type="number"
+                    name="age1"
+                    placeholder="Enter age"
+                    min="1"
+                    max="120"
+                    required
+                >
+
+
+                <label>Department</label>
+
+                <select name="department1" required>
+
+                    <option value="">Select Department</option>
+
+                    <option>Cardiology</option>
+
+                    <option>Neurology</option>
+
+                    <option>Orthopedics</option>
+
+                    <option>General Medicine</option>
+
+                </select>
+
+
+                <label>Treatment</label>
+
+                <select name="treatment1" required>
+
+                    <option value="">Select Treatment</option>
+
+                    <option>Medication</option>
+
+                    <option>Surgery</option>
+
+                    <option>Therapy</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Patient 2 -->
+
+            <div class="patient-card">
+
+                <div class="card-header">
+                    <span>02</span>
+                    <h3>Patient 2</h3>
+                </div>
+
+                <label>Patient Name</label>
+
+                <input
+                    type="text"
+                    name="name2"
+                    placeholder="Enter patient name"
+                    required
+                >
+
+
+                <label>Age</label>
+
+                <input
+                    type="number"
+                    name="age2"
+                    placeholder="Enter age"
+                    min="1"
+                    max="120"
+                    required
+                >
+
+
+                <label>Department</label>
+
+                <select name="department2" required>
+
+                    <option value="">Select Department</option>
+
+                    <option>Cardiology</option>
+
+                    <option>Neurology</option>
+
+                    <option>Orthopedics</option>
+
+                    <option>General Medicine</option>
+
+                </select>
+
+
+                <label>Treatment</label>
+
+                <select name="treatment2" required>
+
+                    <option value="">Select Treatment</option>
+
+                    <option>Medication</option>
+
+                    <option>Surgery</option>
+
+                    <option>Therapy</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Patient 3 -->
+
+            <div class="patient-card">
+
+                <div class="card-header">
+                    <span>03</span>
+                    <h3>Patient 3</h3>
+                </div>
+
+                <label>Patient Name</label>
+
+                <input
+                    type="text"
+                    name="name3"
+                    placeholder="Enter patient name"
+                    required
+                >
+
+
+                <label>Age</label>
+
+                <input
+                    type="number"
+                    name="age3"
+                    placeholder="Enter age"
+                    min="1"
+                    max="120"
+                    required
+                >
+
+
+                <label>Department</label>
+
+                <select name="department3" required>
+
+                    <option value="">Select Department</option>
+
+                    <option>Cardiology</option>
+
+                    <option>Neurology</option>
+
+                    <option>Orthopedics</option>
+
+                    <option>General Medicine</option>
+
+                </select>
+
+
+                <label>Treatment</label>
+
+                <select name="treatment3" required>
+
+                    <option value="">Select Treatment</option>
+
+                    <option>Medication</option>
+
+                    <option>Surgery</option>
+
+                    <option>Therapy</option>
+
+                </select>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Submit -->
+
+        <div class="submit-area">
+
+            <button type="submit">
+                Generate Patient Report
+            </button>
+
+        </div>
+
+    </form>
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+        Patient Records Analysis System
+    </div>
+
+</div>
+
+</body>
+
+</html>
