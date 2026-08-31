@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Package Handling Workflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1> Package Handling System</h1>
+        <p>Stack and Queue Based Workflow</p>
+    </div>
+
+    <form action="process.php" method="post">
+
+        <label>Package Name</label>
+        <input type="text" name="package"
+               placeholder="Enter package name" required>
+
+        <label>Select Operation</label>
+
+        <select name="operation">
+            <option value="add_queue">Add to Queue</option>
+            <option value="process_queue">Process Queue</option>
+            <option value="push_stack">Push to Stack</option>
+            <option value="pop_stack">Pop from Stack</option>
+        </select>
+
+        <button type="submit">Process Package</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
