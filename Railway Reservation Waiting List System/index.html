@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Railway Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1> Railway Reservation</h1>
+        <p>Waiting List & Seat Allocation System</p>
+    </div>
+
+    <form action="process.php" method="post">
+
+        <label>Passenger Name</label>
+        <input type="text" name="name"
+               placeholder="Enter passenger name" required>
+
+        <label>Action</label>
+
+        <select name="action">
+            <option value="book">Add Passenger</option>
+            <option value="cancel">Cancel Passenger</option>
+        </select>
+
+        <label>Passenger Name for Cancellation</label>
+        <input type="text" name="cancel_name"
+               placeholder="Enter name to cancel">
+
+        <button type="submit">Process Request</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
