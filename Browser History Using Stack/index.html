@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browser History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1> Browser History</h1>
+        <p>Manage Recently Visited Pages Using Stack</p>
+    </div>
+
+    <form action="process.php" method="post">
+
+        <label>Page Name</label>
+        <input type="text" name="page"
+               placeholder="Enter page name" required>
+
+        <label>Operation</label>
+        <select name="operation">
+
+            <option value="visit">Visit Page</option>
+            <option value="back">Go Back</option>
+
+        </select>
+
+        <button type="submit">Process</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
