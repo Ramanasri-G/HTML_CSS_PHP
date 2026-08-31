@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Transaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Banking Transaction</h1>
+    <p class="subtitle">Transaction Processing & Exception Handling</p>
+
+    <form action="process.php" method="post">
+
+        <label>Account Holder Name</label>
+        <input type="text" name="name" placeholder="Enter account holder name" required>
+
+        <label>Transaction Amount (₹)</label>
+        <input type="number" name="amount" step="0.01"
+               placeholder="Enter transaction amount" required>
+
+        <label>Number of Transactions</label>
+        <input type="number" name="transactions"
+               placeholder="Enter number of transactions" required>
+
+        <label>Transaction Type</label>
+        <select name="type" required>
+            <option value="">-- Select Transaction Type --</option>
+            <option value="Deposit">Deposit</option>
+            <option value="Withdrawal">Withdrawal</option>
+        </select>
+
+        <button type="submit">Process Transaction</button>
+
+    </form>
+</div>
+
+</body>
+</html>
