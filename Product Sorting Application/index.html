@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Sorting Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Product Sorting Application</h1>
+    <p>Enter product details to sort them by price.</p>
+
+    <form action="process.php" method="post">
+
+        <label>Product 1 Name</label>
+        <input type="text" name="product1" required>
+
+        <label>Product 1 Price (₹)</label>
+        <input type="number" name="price1" min="1" step="0.01" required>
+
+        <label>Product 2 Name</label>
+        <input type="text" name="product2" required>
+
+        <label>Product 2 Price (₹)</label>
+        <input type="number" name="price2" min="1" step="0.01" required>
+
+        <label>Product 3 Name</label>
+        <input type="text" name="product3" required>
+
+        <label>Product 3 Price (₹)</label>
+        <input type="number" name="price3" min="1" step="0.01" required>
+
+        <label>Product 4 Name</label>
+        <input type="text" name="product4" required>
+
+        <label>Product 4 Price (₹)</label>
+        <input type="number" name="price4" min="1" step="0.01" required>
+
+        <button type="submit">Sort Products</button>
+
+    </form>
+</div>
+
+</body>
+</html>
