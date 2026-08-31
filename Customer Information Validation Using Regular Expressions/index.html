@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Information Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Customer Information Validation</h1>
+        <p>Regular Expression Based Validation System</p>
+    </div>
+
+    <form action="process.php" method="post">
+
+        <div class="form-group">
+            <label>Customer Name</label>
+            <input type="text" name="name" placeholder="Enter customer name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" name="phone" placeholder="Enter 10-digit phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email ID</label>
+            <input type="email" name="email" placeholder="Enter email address" required>
+        </div>
+
+        <div class="form-group">
+            <label>Account Number</label>
+            <input type="text" name="account" placeholder="Enter 10-digit account number" required>
+        </div>
+
+        <button type="submit">Validate Customer</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
