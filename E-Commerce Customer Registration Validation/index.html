@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce Customer Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1> Customer Registration</h1>
+        <p>E-Commerce Registration Validation System</p>
+    </div>
+
+    <form action="process.php" method="post">
+
+        <label>Customer Name</label>
+        <input type="text" name="name" placeholder="Enter full name" required>
+
+        <label>Phone Number</label>
+        <input type="text" name="phone" placeholder="Enter 10-digit phone number" required>
+
+        <label>Email Address</label>
+        <input type="text" name="email" placeholder="Enter email address" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter password" required>
+
+        <label>PIN Code</label>
+        <input type="text" name="pincode" placeholder="Enter 6-digit PIN code" required>
+
+        <button type="submit">Register & Validate</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
