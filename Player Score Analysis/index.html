@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Score Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1> Player Score Analysis</h1>
+        <p>Analyze Player Performance</p>
+    </div>
+
+    <form action="process.php" method="post">
+
+        <label>Player 1 Score</label>
+        <input type="number" name="score1" min="0" required>
+
+        <label>Player 2 Score</label>
+        <input type="number" name="score2" min="0" required>
+
+        <label>Player 3 Score</label>
+        <input type="number" name="score3" min="0" required>
+
+        <label>Player 4 Score</label>
+        <input type="number" name="score4" min="0" required>
+
+        <label>Player 5 Score</label>
+        <input type="number" name="score5" min="0" required>
+
+        <button type="submit">Analyze Scores</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
