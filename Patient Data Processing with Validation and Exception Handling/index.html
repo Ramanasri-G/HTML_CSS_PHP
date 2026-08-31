@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Data Processing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Patient Data Processing</h1>
+    <p>Enter patient details for validation and processing.</p>
+
+    <form action="process.php" method="post">
+
+        <label>Patient Name</label>
+        <input type="text" name="name" required>
+
+        <label>Age</label>
+        <input type="number" name="age" min="1" max="120" required>
+
+        <label>Gender</label>
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>Patient ID</label>
+        <input type="text" name="patient_id" required>
+
+        <label>Blood Group</label>
+        <select name="blood_group" required>
+            <option value="">Select Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+
+        <label>Diagnosis</label>
+        <input type="text" name="diagnosis" required>
+
+        <button type="submit">Process Patient Data</button>
+
+    </form>
+</div>
+
+</body>
+</html>
