@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Marketing Campaign Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Digital Marketing Campaign Analysis</h1>
+    <p>Enter campaign performance data</p>
+
+    <form action="process.php" method="post">
+
+        <label>Campaign Name</label>
+        <input type="text" name="campaign" required>
+
+        <label>Impressions</label>
+        <input type="number" name="impressions" min="1" required>
+
+        <label>Clicks</label>
+        <input type="number" name="clicks" min="0" required>
+
+        <label>Conversions</label>
+        <input type="number" name="conversions" min="0" required>
+
+        <label>Campaign Cost (₹)</label>
+        <input type="number" name="cost" min="0" step="0.01" required>
+
+        <label>Revenue Generated (₹)</label>
+        <input type="number" name="revenue" min="0" step="0.01" required>
+
+        <button type="submit">Analyze Campaign</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
